@@ -1,0 +1,83 @@
+.kontakt {
+  &__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $black2;
+    z-index: -1;
+  }
+  &__wrapper {
+    @include breakpoints;
+    padding: 272px 0 104px;
+    color: $white;
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      line-height: 65px;
+      padding-bottom: 26px;
+    }
+  }
+  &__container {
+    display: flex;
+  }
+  &__img {
+    width: 50%;
+    height: 100%;
+    padding: 99px 112px 0;
+    img {
+      width: 424px;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 26px;
+    h2 {
+      font-size: 40px;
+      font-weight: normal;
+      text-align: center;
+    }
+    p {
+      font-weight: normal;
+    }
+  }
+  &__paragraph {
+    padding-top: 12px;
+    padding-left: 12px;
+  }
+  &__boxes {
+    display: flex;
+    column-gap: 24px;
+    padding-top: 24px;
+  }
+  &__box {
+    width: calc((100% - 24px) / 2);
+    font-size: 16px;
+    padding: 12px 20px;
+    background-color: $red;
+    border: 1px solid $white;
+  }
+  &__box-large {
+    margin-top: 24px;
+    width: 100%;
+    height: 190px;
+    padding: 12px 20px;
+    background-color: $red;
+    border: 1px solid $white;
+  }
+  &__button {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    p {
+      padding: 14px 7px;
+      background-color: $red;
+      border: 1px solid $white;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+//variables
+@import "./variables/colors";
+
+//mixins
+
+@import "./mixins/css-grid";
+
+//config
+@import "./config//normalize";
+@import "./config/bootstrap-grid";
+@import "./config/template";
+
+// commons
+
+// main
+@import "./templates/menu";
+@import "./templates/start";
+@import "./templates/onas";
+@import "./templates/kontakt";
+@import "./templates/stopka";
